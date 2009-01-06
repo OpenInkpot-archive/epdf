@@ -1,0 +1,41 @@
+Source: epdf
+Section: gui
+Priority: optional
+Maintainer: Alexander Kerner <lunohod@openinkpot.org>
+Build-Depends: debhelper (>= 6), cdbs, automake1.7 | automaken, libtool, pkg-config
+Standards-Version: 3.7.3
+Homepage: http://www.enlightenment.org
+XCS-Cross-Host-Build-Depends: debhelper (>= 6), cdbs, automake1.7 | automaken, libtool, pkg-config
+XCS-Cross-Build-Depends: libewl1-dev, libecore-dev, libevas-dev
+XS-Vcs-Git: http://git.openinkpot.org/epdf.git
+XS-Vcs-Browser: http://git.openinkpot.org/epdf.git
+
+Package: libepdf-dev
+Section: libdevel
+Architecture: any
+Depends: libepdf0 (= ${Source-Version})
+Description: Enlightenment DR17 PDF viewer using libpoppler - development files
+
+Package: libepdf0
+Architecture: any
+Depends: ${shlibs:Depends}
+Provides: libpdf
+Description: Enlightenment DR17 PDF viewer using libpoppler.
+
+Package: libepdf-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends: libepdf0 (= ${binary:Version})
+Description: Enlightenment DR17 PDF viewer using libpoppler - debug symbols
+ This package contains unstripped shared libraries. It is provided primarily
+ to provide a backtrace with names in a debugger, this makes it somewhat easier
+ to interpret core dumps. The libraries are installed in /usr/lib/debug and
+ are automatically used by gdb.
+
+Package: libepdf-bin
+Architecture: any
+Section: gui
+Priority: extra
+Depends: ${shlibs:Depends}
+Description: Programs for Epdf
