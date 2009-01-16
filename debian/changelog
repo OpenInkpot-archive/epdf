@@ -1,3 +1,9 @@
+epdf (0.1-20090116-1) asimov; urgency=low
+
+  * merged with upstream
+
+ -- Alexander Kerner <lunohod@openinkpot.org>  Fri, 16 Jan 2009 17:31:32 +0000
+
 epdf (0.1-20090106-1) unstable; urgency=low
 
   * first OI build
