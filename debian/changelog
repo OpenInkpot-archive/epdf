@@ -1,3 +1,11 @@
+epdf (0.1-20090116-2) asimov; urgency=low
+
+  * version bump
+  * removed debian/shlibs.local
+  * added cdbs-embedded dependency
+
+ -- Alexander Kerner <lunohod@openinkpot.org>  Sun, 15 Mar 2009 18:18:44 +0100
+
 epdf (0.1-20090116-1) asimov; urgency=low
 
   * merged with upstream
