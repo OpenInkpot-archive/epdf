@@ -1,3 +1,9 @@
+epdf (0.1-20090116-2+b1) asimov; urgency=low
+
+  * Rebuild with new toolchain.
+
+ -- Alexander Kerner <lunohod@openinkpot.org>  Fri, 03 Apr 2009 16:15:51 +0200
+
 epdf (0.1-20090116-2) asimov; urgency=low
 
   * version bump
